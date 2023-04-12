@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>background</title>
+    <style>
+      .container{
+        width:500px;
+        padding:20px;
+        border: 3px rgb(74, 133, 138) solid;
+        border-radius: 40px;
+        margin:40px auto;
+      }
+
+      .container p{
+        text-align: center;
+      }
+
+      input{
+        background-color: rgb(167, 173, 247);
+        padding:15px 60px;
+        border-radius: 50px;
+        border:2px solid rgb(13, 99, 94);
+        font-size: 22px;
+     
+        }
+
+    
+
+      .user{
+        background-image: url(./image/user.png);
+        background-repeat: no-repeat;
+        background-size: 40px;
+        background-position: 15px;
+      }
+      .email{
+        background-image: url(./image/mail.png);
+        background-repeat: no-repeat;
+        background-size: 40px;
+        background-position: 15px;
+      }
+      .tel{
+        background-image: url(./image/phone.png);
+        background-repeat: no-repeat;
+        background-size: 40px;
+        background-position: 15px;
+      }
+
+      input:focus{
+        background-color: rgb(154, 198, 223);
+      }
+
+      input:hover{
+        cursor: pointer;
+      }
+
+    </style>
+</head>
+<body>
+
+ <div class="container">
+    <p><input class="user" type="user" name="userName" placeholder="이름을 입력하세요"></p>
+    <p><input class= "email" type="email" name="userEmail" placeholder="이메일을 입력하세요"></p>
+    <p><input class="tel" type="tel" name="userTel" placeholder="연락처를 입력하세요"></p>
+</div>
+
+
+</body>
+</html>
