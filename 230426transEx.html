@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>transEx</title>
+    <style>
+        body{margin:0; }
+
+        .container1{
+            background-color: aquamarine;
+            padding:10px;
+            width:25vw;
+            height: 40vh;
+        }
+
+        .container2{
+            margin:0;
+            width:30vw;
+            height: 30vh;
+            background-color: rgb(211, 243, 216);
+            transition: 0.5s;
+        }
+
+        input[type=checkbox]:checked ~ .container1{
+            height: 20vh;
+        }
+
+        input[type=checkbox]:checked ~ .container2{
+            transform: translateY(-260px);
+        }
+
+        
+
+      
+    </style>
+</head>
+<body>
+    <h1>trans 연습 4</h1>
+ 
+        <input type="checkbox" name="check" id="check"> 
+        <label for="check">체크 박스가 체크되면 박스가 위로 올라와 사라집니다.</label>
+
+
+    <div class="container container1">
+        <h2>: cheked</h2>
+            한글입숨한글입숨한글입숨한글입숨한글입숨한글입숨한글입숨한글입숨한글입숨한글입숨
+            한글입숨한글입숨한글입숨한글입숨한글입숨한글입숨한글입숨한글입숨한글입숨한글입숨
+            한글입숨한글입숨한글입숨한글입숨한글입숨한글입숨한글입숨한글입숨한글입숨한글입숨
+            한글입숨한글입숨한글입숨한글입숨한글입숨한글입숨한글입숨
+        
+        </div>
+
+        <div class="container container2">
+            block
+        </div>
+    </div>
+</body>
+</html>
