@@ -1,0 +1,657 @@
+@charset "utf-8";
+
+header{
+  height: 100vh;
+}
+
+/* header menu */
+header .menu {
+  width:100%;
+  background-color: #2b2b2b23;
+  height: 98px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+  border-bottom: 1px solid #fff;
+  position: fixed;
+  z-index: 999;
+
+}
+
+
+header .menu .logo img{
+width:200px;
+object-fit: cover;
+margin-left:4vw;
+margin-top:15px;
+}
+
+
+header .menu li{
+  list-style: none;
+  width:10vw;
+}
+
+header .menu li a{
+  font-family: "나눔스퀘어", sans-serif;
+  font-weight: bold;
+  font-size: 18px;
+  color: white;
+}
+
+header .menu .list1{
+  display: flex;
+  width:40vw;
+  margin-left:6vw;
+}
+
+
+header .menu .list1 li a{
+ margin:15px;
+}
+
+header .menu .list1 li a:hover{
+  color:rgb(255, 174, 0);
+}
+
+header .menu .list2{
+  display: flex;
+}
+
+header .menu .list2 li{
+  width:160px;
+}
+
+header .menu .list2 li:nth-child(3){
+  width:90px;
+  margin-right: 2vw;
+}
+
+header .menu .list2 li:nth-of-type(1){
+  width:130px;
+  background-color: #ff9500;
+  border-radius: 50px;
+  margin-right:13px;
+}
+
+header .menu .list2 li a{
+  font-size: 16px;
+}
+
+header .list2 svg{
+  width:15px;
+  height:15px;
+}
+/* ------------------------------------------------------------ */
+/* video */
+.bg-video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  z-index: -1;
+}
+
+.bg-video__content {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+/* ------------------------------------------------------------ */
+/* header main */
+.header1{
+  font-family: 'Noto Sans KR', sans-serif;
+  text-transform: uppercase;
+  font-style: italic;
+  color:#fff;
+  position:absolute;
+  top:35vh;
+  left:10vw;
+  text-shadow: 1px 1px 1px #171717;
+}
+.header1 p:nth-child(1){
+  text-indent:60px;
+  font-size: 3rem;
+}
+
+.header1 p:nth-child(2){
+  font-size: 4rem;
+  margin-bottom: 10px;
+}
+
+/* header side btn */
+.sidebtn{
+  position:absolute;
+  right:25px;
+  top:45vh;
+}
+
+.sidebtn li{
+  width:100px;
+  height:100px;
+  background-color: #514e4e93;
+  text-align: center;
+  margin-bottom: 20px;
+  border-radius: 50%;
+  padding-top:13px;
+}
+
+.sidebtn li a{
+  font-size: 14px;
+  color:#fff;
+  font-weight: bold;
+}
+
+.sidebtn li:nth-child(1){
+  padding-top:18px;
+}
+
+.sidebtn li:hover{
+  background-image: linear-gradient(45deg, rgba(253, 223, 85, 0.7),rgba(247, 153, 1, 0.7));
+}
+
+
+/* main */
+.short{
+  text-align: center;
+  line-height: 1.6;
+  margin-top:8rem;
+}
+.short h3{
+  color:#ff9500;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+.short h2{
+  font-size: 3rem;
+  font-weight: bold;
+  font-family: 'Play', sans-serif;
+  margin-bottom:10px;
+}
+.short p{
+  font-family: 'Noto Sans KR', sans-serif;
+  font-size: 16px;
+  color:#717171;
+}
+
+.main3{
+  display: flex;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  margin-top:20vh;
+  font-size: 16px;
+  font-family: 'Play', sans-serif;
+  color:#000000 ;
+}
+.main3 ul{
+  width:20%;
+}
+.main3 img{
+  margin-bottom: 4vh;
+}
+.main3 .num{
+  font-family: 'Play', sans-serif;
+  font-size: 4.2rem;
+}
+.main3 li:nth-child(2){
+  position:relative;
+  margin-bottom: 3vh;
+}
+.main3 li:nth-child(2)::after{
+  content: "";
+  position:absolute;
+  top:9vh;
+  right:9vw;
+  border: 1px solid rgb(64, 62, 62);
+  width:25px;
+}
+
+.main3 .blue{
+  color:rgb(5, 24, 107);
+  font-weight: bold;
+  font-size: 1.2rem;
+  margin-top:15px;
+  margin-bottom: 15px;
+  font-family: 'Noto Sans KR', sans-serif;
+}
+
+.main3 .gray{
+  font-family: 'Noto Sans KR', sans-serif;
+  font-size: 16px;
+}
+
+/* main5 */
+.main5{
+  position:relative;
+}
+
+.main5 .box1{
+  margin-top:4vh;
+  background-color: #f0f0f0;
+  width: 1025px;
+  height: 585px;
+  padding:6vh;
+  font-family: 'Noto Sans KR', sans-serif;
+}
+
+.main5 .box1 ul{
+  display: flex;
+  justify-content: center;
+}
+
+.main5 .box1 li{
+margin:12px;
+}
+
+.main5 .box1 li a{
+  color:rgb(93, 93, 93);
+  font-weight: 600;
+}
+
+.main5 .box1 h2{
+text-align: center;
+font-size:2.2rem;
+font-weight:600;
+margin-top: 4vh;
+margin-bottom: 4vh;
+color:rgb(46, 42, 42);
+}
+
+.main5 .box1 p{
+  text-align: center;
+  margin:30px auto;
+  line-height: 1.7;
+  font-size: 14px;
+  color:rgb(93, 93, 93);
+}
+
+.main5 .box1 .before{
+  color:#ff9500;
+}
+
+.main5 .box1 li a:hover{
+ color: #ff9500;
+}
+
+
+.main5 .box1 .before::before{
+  content: "";
+  position:absolute;
+  top:7vh;
+  border: 1.5px solid #ff9705;
+  width:4.5vw;
+}
+
+.main5 .box2{
+  position:absolute;
+  top:5vh;
+  right: 0;
+}
+
+.main5 .box3 p{
+  background-color: #ff9500;
+  width:160px;
+  height: 45px;
+  text-align: center;
+  line-height: 45px;
+  position:absolute;
+  top:33vh;
+  left:45vw;
+  transition:0.5s;
+}
+
+.main5 .box3 p a{
+  color:white;
+  font-size: 18spx;
+  font-weight: bold;
+}
+
+.main5 .box3 p:hover{
+  border-radius: 50px;
+}
+
+.main6 ul{
+  display: flex;
+  justify-content: center;
+}
+
+.main6 li{
+  margin:30px;
+}
+
+.main6 li a{
+  font-size: 18px;
+  font-family: 'Play', sans-serif;
+  color:#0c0c0c
+}
+
+.main6 li .before{
+  color:#ff9500;
+}
+
+.main6 li a:hover{
+  color:#ff9500;
+}
+
+.main6 h2{
+  height: 50vh;
+  background-color: yellow;
+  color:red;
+  text-align: center;
+  line-height: 50vh;
+  font-size: 5rem;
+  margin-top:5vh;
+}
+
+.main6 p {
+width:9%;
+height: 5.5vh;
+background-color: #ff9500;
+text-align: center;
+margin:5vh auto;
+transition: 0.5s;
+}
+
+.main6 p a{
+  color:white;
+  line-height: 5.5vh;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.main6 p:hover{
+  border-radius: 50px;
+}
+/* footer */
+
+
+.footer2{
+  display: flex;
+  justify-content:space-around;
+  margin-top:10vh;
+  position: relative;
+}
+
+.footer2 .news{
+  position: relative;
+}
+
+.footer2 .news img{
+  width:600px;
+  height: 410px;
+}
+
+.footer2 .news p:nth-child(1){
+  width:150px;
+  height: 5.5vh;
+  background-color: #ff9500;
+  color:white;
+  line-height: 5.5vh;
+  font-size: 18px;
+  text-align: center;
+  font-family: 'Noto Sans KR', sans-serif;
+  position:absolute;
+  top:0vh;
+  z-index: 10;
+}
+
+.footer2 .news h1{
+  font-size: 2.5rem;
+  font-family: 'Noto Sans KR', sans-serif;
+  color:white;
+  font-weight: bold;
+  text-align: center;
+  position: absolute;
+  top:8vh;
+  left:4vw;
+  z-index: 10;
+}
+
+.footer2 .news h4{
+  font-family: 'play', sans-serif;
+  color:white;
+  font-size: 18px;
+  position:absolute;
+  bottom:24vh;
+  left:13vw;
+  z-index: 10;
+}
+
+.footer2 .news p:nth-child(4){
+  width:140px;
+  height: 50px;
+  border: 2px solid white;
+  text-align: center;
+  line-height: 2.2;
+  position: absolute;
+  bottom:15vh;
+  left:12vw;
+  z-index: 10;
+}
+
+.footer2 .news a{
+  font-family: 'Noto Sans KR', sans-serif;
+  color:white;
+  font-size: 20px;
+}
+
+
+.footer2 .newsbox{
+  width:600px;
+  height: 410px;
+  background-color: #1a1919ad;
+  position:absolute;
+  top:0;
+  left:68px;
+  text-indent: -999px;
+  z-index: 1;
+  transition:0.5s;
+}
+
+.footer2 .newsbox:hover{
+  background-color: #1a191967;
+  cursor: pointer;
+}
+
+.notice{
+  width:600px;
+  margin-top:20px;
+  position:relative;
+}
+
+.notice h3{
+  font-family: 'play', sans-serif;
+  font-size:2.5rem;
+  color:#383838
+}
+
+.notice p {
+  width:128px;
+ height: 40px;
+  border: 1px solid rgb(204, 204, 204);
+  text-align: center;
+  line-height: 36px;
+  position:absolute;
+  top:0;
+  right:-20px;
+  transition: 0.5s;
+}
+
+.notice p a{
+  color:#000000;
+  font-family: 'Noto Sans KR', sans-serif;
+}
+
+.notice p:hover{
+  border:1px solid rgb(117, 117, 117) ;
+  border-radius: 50px;
+}
+
+.notice ul:nth-child(3){
+  margin-top:4vh;
+  float: left;
+}
+
+.notice .title li{
+  margin-bottom:40px;
+  position:relative;
+}
+
+.notice .title li a{
+  color:#5e5e5e;
+  font-size: 16.5px;
+  font-family: 'Noto Sans KR', sans-serif;
+}
+
+.notice .title li a:hover{
+  text-decoration: underline;
+}
+
+.notice .date{
+  margin-top:4.8vh;
+}
+.notice .date li{
+  color:#c7c7c7;
+  font-size: 16.5px;
+  font-family: 'play', sans-serif;
+  margin-bottom:45px;
+}
+.notice .date li svg{
+  fill:#c7c7c7;
+  width:15px;
+  height:15px;
+  margin-left:60px;
+}
+
+.title li::after{
+  content: "";
+  border-bottom:1px solid #c7c7c7;
+  position:absolute;
+  left:0;
+  top:45px;
+  width:32vw;
+}
+.Recruit{
+  position:relative;
+  z-index: 10;
+}
+.Recruit h3{
+  color: #ff8800;
+  font-family: 'play', sans-serif;
+  font-size: 2.2rem;
+  position: absolute;
+  top:4vh;
+  left:30px;
+  z-index: 20;
+}
+
+.Recruit p:nth-child(2){
+  font-family: 'Noto Sans KR', sans-serif;
+  font-size: 1.1rem;
+  position: absolute;
+  top:8vh;
+  left:30px;
+  z-index: 20;
+}
+
+.Recruit p:nth-child(3){
+  width:130px;
+  height:45px;
+  background-color: #ff9705;
+  font-family: 'Noto Sans KR', sans-serif;
+  text-align: center;
+  line-height: 45px;
+  position:absolute;
+  bottom:7vh;
+  left:4.5vw;
+  transition: 0.5s;;
+}
+
+.Recruit p:nth-child(3) a{
+color:white;
+font-weight: bold;
+}
+
+.Recruit p:nth-child(3):hover{
+  border-radius: 50px;
+}
+.footer3{
+  margin-top:5vh;
+  height: 10vh;
+  background-color: #f1f0f0;
+  padding-left:5vw;
+  padding-right: 5vw;
+}
+.footer3 ul{
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.footer3 img{
+  margin-top:3.5vh;
+}
+
+
+.footer4{
+  height: 30vh;
+  background-color: rgb(42,42,42);
+  position:relative;
+  color:rgb(127,127,127);
+  font-family: 'Noto Sans KR', sans-serif;
+}
+
+
+.footer4 img{
+  margin-top:5vh;
+  margin-left:4vw;
+}
+
+.footer4 ul{
+  display: flex;
+  position:absolute;
+  top:6vh;
+  right:6vw;
+}
+
+.footer4 li a{
+  color:rgb(127,127,127);
+  margin-right: 30px;
+}
+
+.footer4 li a:hover{
+  text-decoration: underline;
+}
+
+.footer4 .adress{
+  position:absolute;
+  top:15vh;
+  left:8vw;
+  font-size: 14px;
+}
+
+.footer4 .copy{
+  position:absolute;
+  bottom:8vh;
+  left:8vw;
+  font-size: 13px;
+  color:rgb(98, 97, 97);
+}
+
+.footer4 .select{
+  height: 30px;
+}
+
+.footer4 .select1{
+  position:absolute;
+  bottom:16vh;
+  right:20vw;
+}
+
+.footer4 .select2{
+  position:absolute;
+  bottom:16vh;
+  right:10vw;
+}
